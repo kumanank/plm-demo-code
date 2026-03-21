@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TeamcenterECO>
+  <ECOHeader>
+    <ECO_ID>ECO-PLM-80</ECO_ID>
+    <Name>ECO Metrics Dashboard</Name>
+    <Description>ECO created for PLM-80</Description>
+    <Status>Open</Status>
+    <Priority>Medium</Priority>
+    <ChangeType>Design Change</ChangeType>
+  </ECOHeader>
+  <AffectedItems>
+    <Item id="000970" revision="A" name="Torque Arm"/>
+    <Item id="000746" revision="B" name="Gearmotor Assembly"/>
+  </AffectedItems>
+  <ApprovalWorkflow>
+    <Stage name="Engineering Review" status="Pending"/>
+    <Stage name="Manufacturing Review" status="Not Started"/>
+    <Stage name="Quality Approval" status="Not Started"/>
+  </ApprovalWorkflow>
+  <EffectivityDate>2024-04-01</EffectivityDate>
+</TeamcenterECO>
