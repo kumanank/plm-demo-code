@@ -1,0 +1,15 @@
+{
+  "story_keys": [
+    "PLM-125"
+  ],
+  "components": [
+    {
+      "type": "ECO",
+      "id": "ECO-PLM-125",
+      "name": "Execute Risk Assessment",
+      "status": "Open"
+    }
+  ],
+  "generated_by": "AI (CircuIT)",
+  "deployed_to": "Teamcenter"
+}
