@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<ECO>
+  <ECOHeader>
+    <ECO_ID>ECO-2024-001</ECO_ID>
+    <Name>EOL Substitution for Capacitor-X</Name>
+    <Synopsis>Substitute Capacitor-X (Part #CAP-X123) with Vendor-B's Capacitor (Part #CAP-Y456)</Synopsis>
+    <Description>Due to EOL notice for Capacitor-X, a substitution with Vendor-B's Capacitor is required.</Description>
+    <Status>Draft</Status>
+    <Priority>High</Priority>
+    <ChangeType>Substitution</ChangeType>
+  </ECOHeader>
+  <Justification>
+    <ProblemDescription>The primary vendor for Capacitor-X (Part #CAP-X123) has issued an End-of-Life (EOL) notice effective Q4 2024. Current inventory will only support 3 weeks of production.</ProblemDescription>
+    <ProposedSolution>Substitute with Vendor-B Part #CAP-Y456. This component is a Form, Fit, and Function equivalent with verified electrical compatibility. Note: 2% higher voltage rating.</ProposedSolution>
+    <ImpactAnalysis>Traceability check shows this part is used in 14 active assemblies. Technical review confirms Part #CAP-Y456 meets Cisco Thermal Standard-7. No conflicts detected in high-heat Ruggedized Switch lines.</ImpactAnalysis>
+    <ComplianceStatement>This change is classified as Class II (Minor). It maintains UL Safety Certification and complies with Cisco Green Hardware initiative. No customer notification is required.</ComplianceStatement>
+    <DispositionOfOldStock>Use existing stock of Part #CAP-X123 until exhausted (estimated Oct 15), then cut over to Part #CAP-Y456. No scrap required.</DispositionOfOldStock>
+  </Justification>
+  <AffectedItems>
+    <Item>
+      <PartNumber>CAP-X123</PartNumber>
+      <Description>EOL Capacitor</Description>
+    </Item>
+    <Item>
+      <PartNumber>CAP-Y456</PartNumber>
+      <Description>Substitute Capacitor</Description>
+    </Item>
+  </AffectedItems>
+  <ApprovalWorkflow>
+    <EngineeringReview>Required</EngineeringReview>
+    <ManufacturingReview>Required</ManufacturingReview>
+    <QualityApproval>Required</QualityApproval>
+    <CCB>Not Required</CCB>
+  </ApprovalWorkflow>
+  <RiskAssessment>
+    <Level>Medium</Level>
+    <Rationale>2% voltage variance requires thermal validation but within acceptable tolerance per Cisco standards.</Rationale>
+  </RiskAssessment>
+</ECO>
+```
