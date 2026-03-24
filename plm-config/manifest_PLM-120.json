@@ -1,0 +1,15 @@
+{
+  "story_keys": [
+    "PLM-120"
+  ],
+  "components": [
+    {
+      "type": "ECO",
+      "id": "ECO-PLM-120",
+      "name": "Ensure Green Hardware Initiative Compliance",
+      "status": "Open"
+    }
+  ],
+  "generated_by": "AI (CircuIT)",
+  "deployed_to": "Teamcenter"
+}
