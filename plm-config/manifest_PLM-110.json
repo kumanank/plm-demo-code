@@ -1,0 +1,15 @@
+{
+  "story_keys": [
+    "PLM-110"
+  ],
+  "components": [
+    {
+      "type": "ECO",
+      "id": "ECO-PLM-110",
+      "name": "Workflow Routing Based on Change Classification",
+      "status": "Open"
+    }
+  ],
+  "generated_by": "AI (CircuIT)",
+  "deployed_to": "Teamcenter"
+}
