@@ -1,0 +1,15 @@
+{
+  "story_keys": [
+    "PLM-142"
+  ],
+  "components": [
+    {
+      "type": "ECO",
+      "id": "ECO-2024-142",
+      "name": "Recommend Best Substitute with Justification",
+      "status": "Open"
+    }
+  ],
+  "generated_by": "AI (CircuIT)",
+  "deployed_to": "Teamcenter"
+}
