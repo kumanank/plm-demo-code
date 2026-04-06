@@ -1,0 +1,14 @@
+{
+  "story_key": "PLM-202",
+  "type": "firmware",
+  "language": "c",
+  "changes": {
+    "old_voltage": 16,
+    "new_voltage": 16.3,
+    "voltage_min": 15.48,
+    "voltage_max": 17.12,
+    "change_reason": "Capacitor EOL substitution CAP-X123 \u2192 CAP-Y456"
+  },
+  "generated_by": "AI (CircuIT)",
+  "ai_confidence": 90
+}
