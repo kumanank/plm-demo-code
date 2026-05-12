@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TeamcenterECO>
+  <ECOHeader>
+    <ECO_ID>ECO-2024-20</ECO_ID>
+    <Name>Recommend Best Substitute with Detailed Justification</Name>
+    <Synopsis>Capacitor EOL Substitution - Catalyst 9300</Synopsis>
+    <Description>AI-driven component substitution for SCRUM-20</Description>
+    <Status>Open</Status>
+    <Priority>Medium</Priority>
+    <ChangeType>Component Substitution (Obsolescence)</ChangeType>
+  </ECOHeader>
+  
+  <Justification>
+    <ProblemDescription>EOL notice for Capacitor-X (Part #CAP-X123) - 100µF/16V/0805 SMD. Only 3 weeks inventory remaining.</ProblemDescription>
+    <ProposedSolution>AI RECOMMENDATION: CAP-Y456 (Murata). AI searched 5 candidates, applied Form-Fit-Function analysis, selected based on form factor match (0805), voltage compliance (16.3V), and Thermal Standard-7 compliance.</ProposedSolution>
+    <ImpactAnalysis>Spec comparison: 2% voltage variance (16.3V vs 16V), exact form factor match, thermal range compliant. No PCB redesign required.</ImpactAnalysis>
+    <ComplianceStatement>Class II (Minor). CAP-Y456: UL94 V-0 certified, RoHS/REACH compliant, AVL APPROVED.</ComplianceStatement>
+    <DispositionOfOldStock>Use CAP-X123 until exhausted (Oct 15), then cutover to CAP-Y456.</DispositionOfOldStock>
+  </Justification>
+  
+  <AIComponentAnalysis>
+    <RecommendedPart id="CAP-Y456" vendor="Murata" reason="Only candidate passing all criteria"/>
+    <RejectedAlternatives>
+      <Part id="CAP-Z789" reason="Form factor mismatch (1206 vs 0805)"/>
+      <Part id="CAP-A001" reason="Voltage too low (10V vs 16V)"/>
+      <Part id="CAP-B002" reason="Pending AVL approval"/>
+      <Part id="CAP-C003" reason="Temp range non-compliant"/>
+    </RejectedAlternatives>
+  </AIComponentAnalysis>
+  
+  <RiskAssessment>
+    <Level>Medium</Level>
+    <Rationale>2% voltage variance - thermal validation recommended</Rationale>
+  </RiskAssessment>
+  
+  <AffectedItems>
+    <Item id="CAP-X123" action="REPLACE"/>
+    <Item id="CAP-Y456" action="ADD"/>
+    <Item id="C89-PWR-MOD" action="UPDATE"/>
+  </AffectedItems>
+  
+  <ApprovalWorkflow>
+    <Stage name="Engineering Review" status="Pending"/>
+    <Stage name="Thermal Validation" status="Not Started"/>
+    <Stage name="Quality Review" status="Not Started"/>
+  </ApprovalWorkflow>
+</TeamcenterECO>
